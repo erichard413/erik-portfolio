@@ -4,7 +4,7 @@ import { SocialIcon } from 'react-social-icons';
 
 const Header = ()=> {
     return (
-        <div className="header">
+        <div className="Header section-div">
             <div className="logo-div">
                 <span id="logo">ER</span>
             </div>

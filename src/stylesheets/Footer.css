@@ -1,0 +1,18 @@
+.Footer {
+    background-color: black;
+    color: white;
+    text-align: right;
+    height: 15px;
+    width: 100vw;
+    display: absolute;
+    position: fixed;
+    bottom: 0;
+    padding: 3px;
+}
+.Footer p {
+    padding: 0;
+    margin: 0;
+    font-size: .9rem;
+    padding-right: 1.5%;
+    font-family: 'Rajdhani', sans-serif;
+}

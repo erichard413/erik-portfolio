@@ -1,16 +1,18 @@
-.header {
+.Header {
     background: rgb(0,109,117);
     background: linear-gradient(90deg, rgba(0,109,117,1) 0%, rgba(0,229,237,1) 100%);
     font-family: 'Rajdhani', sans-serif;
     color: white;
-    display: inline-block;
+    display: absolute;
+    position: fixed;
     /* outline: 1px solid blue; */
     width: 100%;
     height: 150px;
     margin: 0px;
     padding: 0px;
+    z-index: 1;
 }
-.header h1 {
+.Header h1 {
     padding: 0px;
     display: inline-block;
     margin: 0px;
@@ -42,10 +44,10 @@
 #logo {
     font-size: 7rem;
 }
-.header ul {
+.Header ul {
     margin: 0px;
 }
-.header li {
+.Header li {
     /* outline: 1px solid pink; */
     display: block;
     padding: 0px;
@@ -53,21 +55,21 @@
     line-height: .90;
     list-style: none;
 }
-.header li:nth-of-type(2) {
+.Header li:nth-of-type(2) {
     font-size: 5rem;
     font-weight: 600;
     position: relative;
     left: -5px;
 }
-.header li:first-of-type ~ li:nth-of-type(3) {
+.Header li:first-of-type ~ li:nth-of-type(3) {
     font-size: 1.5rem;
     position: relative;
 }
-.header li:first-of-type {
+.Header li:first-of-type {
     font-size: 1.5rem;
     position: relative;
 }
-.header div:nth-of-type(3) {
+.Header div:nth-of-type(3) {
     position: absolute;
     right: 100px;
     top: 20px;
