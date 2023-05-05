@@ -8,7 +8,7 @@
     padding: 25px;
     color: white;
 }
-.About img {
+.about-image img {
     display: inline-block;
     height: 250px;
     border-radius: 50%;
@@ -37,4 +37,14 @@
     display: inline-block;
     width: 82%;
     vertical-align: top;
+}
+.hobbies {
+    text-align: center;
+    width: 100%;
+}
+#leftChevron, #rightChevron {
+    display: inline-block;
+    color: #006d75;
+    height: 80px;
+    padding: 50px;
 }
