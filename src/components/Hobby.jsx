@@ -6,7 +6,7 @@ const Hobby = ({hobby}) => {
         <div className="Hobby">
             <h3>{hobby.name}</h3>
             <div className="Hobby-img">
-                <img src={hobby.img} alt="skateboarding" />
+                <img src={hobby.img} alt={hobby.name} />
             </div>
             <div className="Hobby-info">
                 <p>{hobby.caption}</p>

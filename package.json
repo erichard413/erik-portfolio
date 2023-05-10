@@ -19,7 +19,9 @@
     "@fortawesome/react-fontawesome": "^0.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-social-icons": "^5.15.0"
+    "react-elastic-carousel": "^0.11.5",
+    "react-social-icons": "^5.15.0",
+    "styled-components": "^6.0.0-rc.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",

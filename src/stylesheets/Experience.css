@@ -7,4 +7,53 @@
     margin-right: 100px;
     padding: 25px;
     color: white;
+    text-align: center;
+}
+.Experience h2 {
+    color: rgba(0,229,237,1);
+    padding: 10px;
+    font-size: 2.5rem;
+    text-align: left;
+}
+.Experience a {
+    color: rgba(0,229,237,1);
+    text-decoration: none;
+    font-weight: 600;
+}
+.Experience a:visited, a:active {
+    color: rgba(0,229,237,1);
+    text-decoration: none;
+    font-weight: 600;
+}
+.Experience p {
+    display: inline-block;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+.Experience img:hover {
+    filter: none;
+    transition: filter .7s;
+}
+.Experience .at-sign {
+    color: white;
+}
+.employer-content > ul > li {
+    list-style: none;
+}
+.employer-content {
+    display: inline-block;
+    text-align: center;
+    width: 900px;
+}
+.employer-content > ul {
+    text-align: left;
+}
+.Experience .li-title {
+    font-weight: 600;
+}
+.Experience li {
+    padding: 2px;
+}
+.employer-content > ul > li:first-of-type {
+    font-style: italic;
 }

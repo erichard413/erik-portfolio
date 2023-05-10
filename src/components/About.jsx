@@ -5,24 +5,33 @@ import '../stylesheets/About.css';
 import erikSkate from '../assets/erik-skate.png'
 import erikDG from '../assets/erik-discgolf.png'
 import erikHockey from '../assets/erik-hockey.png'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
-
+import Carousel from "react-elastic-carousel";
 
 const About = ()=> {
-    const [currHobby, setCurrHobby] = useState(0);
+    const [items, setItems] = useState([1, 2, 3, 4, 5, 6, 7, 8]);
+
+    const addItem = () => {
+    const nextItem = Math.max(1, items.length + 1);
+    setItems([...items, nextItem]);
+    };
+
+    const removeItem = () => {
+    const endRange = Math.max(0, items.length - 1);
+    setItems(items.slice(0, endRange));
+    };
+    
     const hobbies = [
+        {
+            img: erikDG,
+            name: 'Disc Golf',
+            caption: 'I throw frisbees at metal chains for fun',
+            lis: ['3 "Hole-in-ones"', 'Under-performs in every tournament', 'PDGA: #196133']   
+        },
         {
             img: erikSkate,
             name: 'Skateboarding',
             caption: 'Skateboarder of 20+ years, and 0 broken bones!',
             lis: ['Product wear tester for Converse', 'Master of the inward heelflip', 'Link to video reel here']
-        },
-        {
-            img: erikDG,
-            name: 'Disc Golf',
-            caption: 'I throw frisbees at metal chains for fun',
-            lis: ['2 "Hole-in-ones"', 'Under-performs in every tournament', 'PDGA: #196133']   
         },
         {
             img: erikHockey,
@@ -31,22 +40,7 @@ const About = ()=> {
             lis: ['Not a total bender', 'Wrist shot could use work', 'Manages fantasy hockey league, but only won once', 'Enjoys watching the Boston Bruins']   
         }
     ]
-    const clickRight = () => {
-        if (currHobby === hobbies.length -1) {
-            setCurrHobby(0);
-        } else {
-            let nextHobby = currHobby + 1;
-            setCurrHobby(nextHobby);
-        }
-    }
-    const clickLeft = () => {
-        if (currHobby === 0) {
-            setCurrHobby(hobbies.length-1);
-        } else {
-            let nextHobby = currHobby -1;
-            setCurrHobby(nextHobby);
-        }
-    }
+
     return (
         <div className="About section-div">
             <div className="about-image">
@@ -60,15 +54,18 @@ const About = ()=> {
                 <p>
                     Fast forward to today, I've worked with basic HTML & CSS while designing landing pages & email campaigns in a marketing role for years. I knew that I wanted to learn how to do more. I've always been fascinated by technology & computer science, so I decided to jump in head first and joined an intensive 9 month software engineering boot camp.
                 </p>
-                <p>
+                <h3>
                     My hobbies include:
-                </p>
+                </h3>
             </div>
             <div className="hobbies">
-                <FontAwesomeIcon id="leftChevron" onClick={clickLeft} icon={faChevronLeft} /> 
-                <Hobby hobby={hobbies[currHobby]}/> 
-                <FontAwesomeIcon id="rightChevron" onClick={clickRight} icon={faChevronRight} />
-            </div>
+                    <div className="hobbies-container">
+                         <Carousel itemsToShow={1}>
+                            {hobbies.map((hobby) => (
+                            <Hobby key={hobby.name} hobby={hobby} />))}
+                        </Carousel>
+                    </div>
+                </div>
         </div>
     )
 }

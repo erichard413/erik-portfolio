@@ -4,12 +4,18 @@ import '../stylesheets/Contact.css';
 const Contact = ()=> {
     return (
         <div className="Contact section-div">
-            <h2>Contact</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium impedit labore ipsam? Dolorum praesentium quasi consectetur inventore nemo odio nostrum, error id voluptatibus fuga eius minima, quaerat eos sequi cumque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure reiciendis voluptatum animi incidunt pariatur vero tempore! Aliquid ratione quis deserunt soluta inventore, culpa, neque dignissimos adipisci ducimus maxime nam doloribus.
+            <h2>Get in Touch</h2>
+            <div className="Contact-content">
+            <p>I am currently looking for new opportunities! My inbox is always open. Feel free to send me an email.
             </p>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quaerat dignissimos aliquam perferendis harum at laboriosam corrupti sapiente provident id eos voluptate alias saepe. Sapiente voluptates officia optio debitis animi!
-            </p>
+                <a href="mailto:erichard413@outlook.com">
+                <div className="Contact-Box">
+                    Email Me
+                </div>  
+            </a>   
+            </p>  
+            </div>
         </div>
     )
 }

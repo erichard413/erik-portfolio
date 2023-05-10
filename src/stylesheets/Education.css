@@ -1,4 +1,4 @@
-.Work {
+.Education {
     background-color: #454545;
     border: 2px solid #006d75;
     border-radius: 15px;
@@ -7,60 +7,36 @@
     margin-right: 100px;
     padding: 25px;
     color: white;
+    text-align: center;
 }
-.Work h2 {
+.Education h2 {
     color: rgba(0,229,237,1);
     padding: 10px;
     font-size: 2.5rem;
+    text-align: left;
 }
-.Work a {
+.Education a {
     color: rgba(0,229,237,1);
     text-decoration: none;
     font-weight: 600;
 }
-.Work a:visited, a:active {
+.Education a:visited, a:active {
     color: rgba(0,229,237,1);
     text-decoration: none;
     font-weight: 600;
 }
-.Work p {
+.Education p {
     display: inline-block;
     padding: 10px;
     font-size: 1.5rem;
 }
-.Work img:hover {
+.Education img:hover {
     filter: none;
     transition: filter .7s;
 }
-.Work ul {
-    margin: 0;
-    padding: 0
-}
-.Work li {
-    list-style: none;
-}
-.Work .left-content, .right-content {
-    display: inline-block;
-    margin-top: 50px;
-}
-.Work .left-content {
-    width: auto;
-    padding-left: 30px;
-    padding-top: 10px;
-}
-.Work .right-content {
-    width: 60%;
-    vertical-align: top;
-}
-.Work h3 {
-    text-align: center;
-}
-.Work .li-bold {
+.cert {
     font-weight: 600;
 }
-.Work li {
-    padding: 10px;
-}
-.Project {
-    height: 400px;
+.Education li {
+    padding: 5px;
 }

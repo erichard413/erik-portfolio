@@ -1,15 +1,16 @@
-.Hobby img {
+.Project img {
     display: inline-block;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+    width: 400px;
+    height: auto;
+    object-fit: scale-down;
+    border-radius: 10px;
     border: 2px solid #006d75;
     filter: grayscale(90%);
 }
-.Hobby > div {
+.Project > div {
     display: inline-block;
 }
-.Hobby {
+.Project {
     display: inline-block;
     border: 2px solid #006d75;
     border-radius: 25px;
@@ -19,14 +20,14 @@
     padding-bottom: 20px;
     margin-top: 50px;
 }
-.Hobby-info {
+.Project-info {
     vertical-align: top;
     padding-left: 50px;
 }
-.Hobby-info p {
+.Project-info p {
     font-size: 1.3rem;
 }
-.Hobby ul {
+.Project ul {
     display: block;
     text-align: left;
     margin: 0px;

@@ -5,6 +5,7 @@ import Work from './components/Work'
 import Contact from './components/Contact'
 import Experience from './components/Experience'
 import Footer from './components/Footer'
+import Education from './components/Education'
 import './App.css'
 
 function App() {
@@ -41,6 +42,9 @@ function App() {
       </section>  
       <section className="container reveal">
         <Experience />
+      </section>  
+      <section className="container reveal">
+        <Education />
       </section>  
       <section className="container reveal">
         <Contact />

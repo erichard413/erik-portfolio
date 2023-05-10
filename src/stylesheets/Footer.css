@@ -16,3 +16,13 @@
     padding-right: 1.5%;
     font-family: 'Rajdhani', sans-serif;
 }
+.Footer a {
+    color: rgba(0,229,237,1);
+    text-decoration: none;
+    font-weight: 600;
+}
+.Footer a:visited, a:active {
+    color: rgba(0,229,237,1);
+    text-decoration: none;
+    font-weight: 600;
+}

@@ -21,6 +21,7 @@
     font-size: 1.5rem;
 }
 .About h2 {
+    color: rgba(0,229,237,1);
     padding: 10px;
     font-size: 2.5rem;
 }
@@ -35,7 +36,7 @@
 }
 .about-content {
     display: inline-block;
-    width: 82%;
+    width: 80%;
     vertical-align: top;
 }
 .hobbies {
@@ -44,7 +45,61 @@
 }
 #leftChevron, #rightChevron {
     display: inline-block;
+    position: relative;
     color: #006d75;
     height: 80px;
     padding: 50px;
+    top: 90px;
 }
+
+.About section {
+    display: inline;
+    width: auto;
+}
+.hobbies-container {
+    display: inline-block;
+    margin: 0px;
+    padding: 5px;
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 80%;
+    /* outline: 1px solid blue; */
+}
+
+.rec.rec-arrow, .rec.rec-arrow-right, .rec.rec-arrow-left {
+    background-color: #006d75;
+    cursor: pointer;
+    margin-top: 45px;
+}
+
+.rec.rec-arrow:hover:enabled, .rec.rec-arrow:focus:enabled {
+    background-color: #006d75;
+    color: #333333;
+}
+
+.rec.rec-arrow:disabled {
+    opacity: .2;
+    color: #333333;
+}
+
+.rec.rec-dot {
+    background-color: grey;
+}
+.rec.rec-dot_active {
+    background-color:  #006d75;
+    box-shadow: 0 0 1px 1px rgba(0,229,237,1);
+}
+.rec.rec-dot:hover, .rec.rec-dot:focus {
+    box-shadow: 0 0 1px 1px rgba(0,229,237,1);
+}
+h3 {
+    color: rgba(0,229,237,1);
+    font-weight: 600;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.about-content > h3 {
+    font-size: 1.8rem;
+    margin-left: 10px;
+}
+

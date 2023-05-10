@@ -1,15 +1,27 @@
 import React from 'react';
 import '../stylesheets/Experience.css';
+import Employer from './Employer';
 
 const Experience = ()=> {
+    const jobs = [{
+        name: 'Convenient Cards',
+        title: 'Marketing Coordinator',
+        description: 'Convenient Cards, Inc. is a leading provider of prepaid card programs for community banks and Native American tribes.',
+        dates: 'January 2015 - Present',
+        tasks: ['Facilitating the planning and implementation of marketing initiatives', 'Creating digital marketing content such as landing pages, email marketing & social media content', 'Planning logistics, campaigns & tradehows']
+    },
+    {
+        name: 'Herb Chambers',
+        title: 'Internet Marketing Specialist',
+        description: 'Car dealerships located in the greater Boston, MA area.',
+        dates: 'May 2014 - November 2014',
+        tasks: ['Broadcasted consistent marketing message to drive web traffic', 'Photographed cars for website listings', 'Wrote compelling write ups for car listings on website', 'Designed, planned & implemented email marketing'] 
+    }
+    ]
     return (
         <div className="Experience section-div">
-            <h2>Experience</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium impedit labore ipsam? Dolorum praesentium quasi consectetur inventore nemo odio nostrum, error id voluptatibus fuga eius minima, quaerat eos sequi cumque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure reiciendis voluptatum animi incidunt pariatur vero tempore! Aliquid ratione quis deserunt soluta inventore, culpa, neque dignissimos adipisci ducimus maxime nam doloribus.
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quaerat dignissimos aliquam perferendis harum at laboriosam corrupti sapiente provident id eos voluptate alias saepe. Sapiente voluptates officia optio debitis animi!
-            </p>
+            <h2>Where I've Worked</h2>
+            {jobs.map(job => (<Employer employer={job} />))}
         </div>
     )
 }
