@@ -102,4 +102,10 @@ h3 {
     font-size: 1.8rem;
     margin-left: 10px;
 }
+@media (max-width: 380px) {
+    .About.section-div {
+      height: 800px;
+    }
+  }
+  
 

@@ -12,7 +12,7 @@ const Project = ({project}) => {
             <ul>
                 <li>{project.description}</li>
                 <li><span className="li-bold">Tech Stack:</span> {project.tech}</li>
-                <li><span className="li-bold">Link:</span> <a href={project.link}>{project.link}</a></li>
+                <li><span className="li-bold">Link:</span> <a href={project.link} target="_blank">{project.link}</a></li>
                 {project.challenges && <li><span className="li-bold">Challenges:</span> {project.challenges}</li>}
             </ul>
             </div>

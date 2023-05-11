@@ -74,4 +74,13 @@
     right: 100px;
     top: 20px;
 }
-
+@media (max-width: 1030px) {
+  .contact-div {
+    display: inline-block;
+    padding: 25px;
+  }
+  .name-div {
+    display: inline-block;
+    left: -150px;
+  }
+}
