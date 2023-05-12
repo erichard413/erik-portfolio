@@ -1,10 +1,96 @@
+
+@media (max-width: 390px) {
+      .container > .About.section-div {
+        display: inline-block;
+        margin: 10px;
+        width: calc(100vw -10vmax)
+      }
+      .main-content .about-image {
+        display: flex;
+        justify-content: center;
+        width: auto;
+      }
+      .about-content {
+        width: 100%!important;
+      }
+      .About h2 {
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      .About h3 {
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      .About .hobbies-container {
+        width: 100%!important;
+      }
+      .About .rec.rec-slider-container {
+        width: 100%;
+      }
+      .About .rec.rec-slider-container ul {
+        padding: 0;
+        margin: 0;
+      }
+      .About .rec.rec-slider-container li {
+        padding-left: 20px;
+        margin: 0;
+      }
+      .About .Hobby-info {
+        padding: 0;
+      }
+      .About .Hobby {
+        border: 0px
+      }
+}
+
+@media (min-width: 391px) and (max-width: 1663px) {
+    .container > .About.section-div {
+      display: inline-block;
+      margin: 10px;
+      width: 94%
+    }
+    .main-content .about-image {
+      justify-content: center;
+      width: auto;
+      display: flex;
+    }
+    .about-content {
+      width: 100%!important;
+    }
+    .About .rec.rec-slider-container {
+      width: 100%;
+    }
+    .About .rec.rec-slider-container ul {
+      padding: 0;
+      margin: 0;
+    }
+    .About .rec.rec-slider-container li {
+      padding-left: 20px;
+      margin: 0;
+    }
+    .About .Hobby-info {
+      padding: 0;
+    }
+    .About .Hobby {
+      border: 0px;
+      margin-top: 0px;
+    }
+    .Hobby h3 {
+      margin: 5px;
+    }
+}
+
 .About {
     background-color: #454545;
     border: 2px solid #006d75;
     border-radius: 15px;
-    margin-top: 30px;
     margin-left: 100px;
-    margin-right: 100px;
+    margin-right: 100px; 
+    margin-top: 30px;
     padding: 25px;
     color: white;
 }
@@ -102,10 +188,6 @@ h3 {
     font-size: 1.8rem;
     margin-left: 10px;
 }
-@media (max-width: 380px) {
-    .About.section-div {
-      height: 800px;
-    }
-  }
+
   
 

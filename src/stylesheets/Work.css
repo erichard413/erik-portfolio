@@ -64,3 +64,64 @@
 .Project {
     height: 400px;
 }
+@media (max-width: 390px) {
+    .container > .Work.section-div {
+        display: inline-block;
+        margin: 10px;
+        width: calc(100vw -10vmax)
+    }
+    .Work h2 {
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .Work h3 {
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .Work .rec.rec-slider-container {
+        width: 100%;
+    }
+    .Work .rec.rec-slider-container img {
+        width: 90%;
+        margin: auto;
+    }
+    .Work .right-content ul {
+        padding: 5px;
+    }
+    .Work .Project {
+        border: 0px;
+    }
+    .Work .section-div {
+        height: auto;
+    }
+}
+@media (min-width: 391px) and (max-width: 1663px) {
+      .container > .Work.section-div {
+          display: inline-block;
+          margin: 10px;
+          width: 94%;
+      }
+      .Work h2 {
+          text-align: center;
+          width: 100%;
+          margin: 0;
+          padding: 0;
+      }
+      .Work h3 {
+          text-align: center;
+          width: 100%;
+          margin: 0;
+          padding: 0;
+      }
+      .Work .Project {
+        border: 0px;
+      }
+      .Work .rec.rec-slider-container img {
+        width: 90%;
+        margin: auto;
+    }
+}

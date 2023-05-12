@@ -17,7 +17,7 @@ const Header = ()=> {
             </div>
             <div className="contact-div">
                 <div>
-                    <p>Connect: 
+                    <p><span id="connect">Connect: </span>
                     <SocialIcon url="https://www.linkedin.com/in/erik-richard-519a0b21/" bgColor="white" style={{height: 30, width: 30, marginLeft: 5}} />
                     <SocialIcon url="https://www.instagram.com/erikrichard/" bgColor="white" style={{height: 30, width: 30, marginLeft: 5}} />
                     <SocialIcon url="https://github.com/erichard413" bgColor="white" style={{height: 30, width: 30, marginLeft: 5}} />

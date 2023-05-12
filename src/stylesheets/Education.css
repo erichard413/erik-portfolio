@@ -40,3 +40,38 @@
 .Education li {
     padding: 5px;
 }
+@media (max-width: 390px) {
+    .main-content {
+        width: 100%;
+        top: 280px;
+    }
+    .main-content .section-div {
+        height: auto;
+        margin: 0;
+        padding: 5px;
+    }
+    .container > .Education.section-div {
+        display: inline-block;
+        margin: 10px;
+        width: calc(100vw -10vmax);
+    }
+}
+@media (min-width: 391px) and (max-width: 1663px) {
+    .container > .Education.section-div {
+        display: inline-block;
+        margin: 10px;
+        width: 94%;
+    }
+    .Education h2 {
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .Education h3 {
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+}

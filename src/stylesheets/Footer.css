@@ -8,6 +8,7 @@
     position: fixed;
     bottom: 0;
     padding: 3px;
+    width: 100vw;
 }
 .Footer p {
     padding: 0;
