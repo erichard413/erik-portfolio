@@ -3,7 +3,7 @@
       .container > .About.section-div {
         display: inline-block;
         margin: 10px;
-        width: calc(100vw -10vmax)
+        width: calc(100vw - 10vmax)
       }
       .main-content .about-image {
         display: flex;

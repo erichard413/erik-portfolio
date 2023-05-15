@@ -67,7 +67,7 @@
     .container > .Contact.section-div {
         display: inline-block;
         margin: 10px;
-        width: calc(100vw -10vmax);
+        width: calc(100vw - 10vmax);
     }
     .Contact h2 {
         text-align: center;
