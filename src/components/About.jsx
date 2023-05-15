@@ -25,13 +25,13 @@ const About = ()=> {
             img: erikDG,
             name: 'Disc Golf',
             caption: 'I throw frisbees at metal chains for fun',
-            lis: ['3 "Hole-in-ones"', 'Under-performs in every tournament', 'PDGA: #196133']   
+            lis: ['3 "Hole-in-ones"', 'Under-performs in every tournament', <a href="https://www.pdga.com/player/196133" target="_blank">PDGA#: 196133</a>]   
         },
         {
             img: erikSkate,
             name: 'Skateboarding',
             caption: 'Skateboarder of 20+ years, and 0 broken bones!',
-            lis: ['Product wear tester for Converse', 'Master of the inward heelflip', 'Link to video reel here']
+            lis: ['Product wear tester for Converse', 'Master of the inward heelflip', <a href="https://youtu.be/-82xrhWx6_4" target="_blank">Video Reel</a>]
         },
         {
             img: erikHockey,

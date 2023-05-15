@@ -11,7 +11,7 @@ const Employer = ({employer}) => {
                 <li>{employer.description}</li>
                 <li><span className="li-title">Responsibilities:</span>
                     <ul>
-                       {employer.tasks.map(task => (<li>{task}</li>))} 
+                       {employer.tasks.map(task => (<li key={task}>{task}</li>))} 
                     </ul>
                 </li>
             </ul>

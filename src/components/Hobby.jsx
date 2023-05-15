@@ -11,7 +11,7 @@ const Hobby = ({hobby}) => {
             <div className="Hobby-info">
                 <p>{hobby.caption}</p>
                     <ul>
-                        {hobby.lis.map(li => (<li>
+                        {hobby.lis.map(li => (<li key={li}>
                         {li}
                     </li>))}
                     </ul>    

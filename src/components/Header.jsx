@@ -1,12 +1,15 @@
 import React from 'react';
 import '../stylesheets/header.css';
 import { SocialIcon } from 'react-social-icons';
+import erikLogo from '../assets/ER-Logo-White.png';
 
 const Header = ()=> {
     return (
         <div className="Header section-div">
             <div className="logo-div">
-                <span id="logo">ER</span>
+                <span id="logo">
+                    <img src={erikLogo} alt="Erik-Logo" />
+                </span>
             </div>
             <div className="name-div">
                 <ul>

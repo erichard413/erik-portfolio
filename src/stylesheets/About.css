@@ -83,7 +83,16 @@
       margin: 5px;
     }
 }
-
+.About a {
+  color: rgba(0,229,237,1);
+  text-decoration: none;
+  font-weight: 600;
+}
+.About a:visited, a:active {
+  color: rgba(0,229,237,1);
+  text-decoration: none;
+  font-weight: 600;
+}
 .About {
     background-color: #454545;
     border: 2px solid #006d75;
