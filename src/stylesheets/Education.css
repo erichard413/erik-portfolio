@@ -53,7 +53,7 @@
     .container > .Education.section-div {
         display: inline-block;
         margin: 10px;
-        width: calc(100vw - 10vmax);
+        width: 90vw;
     }
     .Education h2 {
         text-align: center;

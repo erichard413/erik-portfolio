@@ -71,7 +71,7 @@
     .container > .Experience.section-div {
         display: inline-block;
         margin: 10px;
-        width: calc(100vw - 10vmax);
+        width: 90vw;
     }
     .Experience h2 {
         text-align: center;
