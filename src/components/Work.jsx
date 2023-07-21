@@ -5,6 +5,7 @@ import imgJobly from '../assets/project-jobly.png'
 import imgHackorSnooze from '../assets/project-hackorsnooze.png'
 import imgReactJokes from '../assets/project-react-jokes.png'
 import imgConnect4 from '../assets/project-connect4.png'
+import imgCCBankLocator from '../assets/project-ccbanklocator.png'
 import Project from './Project';
 import Carousel from "react-elastic-carousel";
 
@@ -22,6 +23,14 @@ const Work = ()=> {
     };
 
     const projects = [
+        {
+            img: imgCCBankLocator,
+            name: "Client Bank Locator",
+            description: "This is a client bank locator made for my employer. This app will allow users to search for near by client banks that provide Convenient Cards products. Users can narrow the search based on miles away from a given address, and filter by product.",
+            link: "https://cc-bank-locator.netlify.app",
+            tech: "React, Vite, GoogleMapsAPI, Geoapify API",
+            challenges: <>This project came up as an internal need for our team to have a fast and easy tool to look up client banks in a given area. One important aspect was not to expose an entire listing of all of our clients, rather only show clients closed to a desired area. For this project I learned about how to calculate distances from latitude/longitude points using the <a href="https://en.wikipedia.org/wiki/Haversine_formula">Haversine formula</a> & learned about Geocoding APIs.</>
+        },
         {
             img: imgNHLStats,
             name: "NHLStats App",

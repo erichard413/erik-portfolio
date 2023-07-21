@@ -1,4 +1,0 @@
-[ZoneTransfer]
-ZoneId=3
-ReferrerUrl=https://builder.zety.com/dashboard
-HostUrl=https://builder.zety.com/eb/api/v2/documents/download?userId=190c163c-dbba-42ea-9f58-a8d406a0f4c1&documentId=9e4cd62d-5bb5-49c6-bccd-769ea82f9da2&portalId=84&fileFormatType=PDF&docFileType=eXPT&styleSheetName=RbtoHtml2&skipCacheCheck=false&isPrint=false&templateName=primo&request={%22isAgent%22:false,%22eventType%22:%22download%22,%22productCD%22:%22RWZ%22,%22eventDetails%22:[{%22name%22:%22screen%20name%22,%22value%22:%22dashboard%22}]}&documentName=Erik_Richard_Resume&sendDownloadEvent=false
