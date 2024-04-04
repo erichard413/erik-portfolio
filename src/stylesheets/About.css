@@ -145,16 +145,20 @@ a:active {
 
 .About .tech-stack-icons * {
   width: 50px;
-  margin: 10px 20px 10px 20px;
   filter: grayscale(1);
 }
 .tech-stack {
   margin-top: 70px;
 }
 .tech-stack-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 2%;
+  row-gap: 10px;
   margin-top: 20px;
+  padding: 20px;
   text-align: center;
-  width: 100%;
 }
 .hobbies {
   text-align: center;
