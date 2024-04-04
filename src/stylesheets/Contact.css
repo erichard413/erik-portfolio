@@ -1,103 +1,72 @@
-.Contact {
-    background-color: #454545;
-    border: 2px solid #006d75;
-    border-radius: 15px;
-    margin-top: 30px;
-    margin-left: 100px;
-    margin-right: 100px;
-    padding: 25px;
-    color: white;
+@media (max-width: 390px) {
+  .Contact h3 {
     text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
+@media (min-width: 391px) and (max-width: 1663px) {
+  .Contact h2 {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .Contact h3 {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
+.Contact {
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
 }
 
 .Contact h2 {
-    color: rgba(0,229,237,1);
-    padding: 10px;
-    font-size: 2.5rem;
-    text-align: left;
+  color: rgba(0, 229, 237, 1);
+  padding: 10px;
+  font-size: 2.5rem;
+  text-align: left;
 }
 .Contact a {
-    color: rgba(0,229,237,1);
-    text-decoration: none;
-    font-weight: 600;
+  color: rgba(0, 229, 237, 1);
+  text-decoration: none;
+  font-weight: 600;
 }
-.Contact a:visited, a:active {
-    color: rgba(0,229,237,1);
-    text-decoration: none;
-    font-weight: 600;
+.Contact a:visited,
+a:active {
+  color: rgba(0, 229, 237, 1);
+  text-decoration: none;
+  font-weight: 600;
 }
 .Contact p {
-    display: inline-block;
-    padding: 10px;
-    font-size: 1.5rem;
-    width: 100%;
-    text-align: center;
+  display: inline-block;
+  padding: 10px;
+  font-size: 1.5rem;
+  text-align: center;
 }
 .Contact img:hover {
-    filter: none;
-    transition: filter .7s;
+  filter: none;
+  transition: filter 0.7s;
 }
 .Contact-Box {
-    display: inline-block;
-    font-size: 1.5rem;
-    border: 2px solid rgba(0,229,237,1);
-    border-radius: 15px;
-    padding: 20px;
-    width: 120px;
-    margin: 10px;
+  display: inline-block;
+  font-size: 1.5rem;
+  border: 2px solid rgba(0, 229, 237, 1);
+  border-radius: 15px;
+  padding: 20px;
+  width: 120px;
+  margin: 10px;
 }
 .Contact-Box:hover {
-    background-color: gray;
+  background-color: gray;
 }
 .Contact-content {
-    display: inline-block;
-    position: relative;
-    margin-top: 5%;
-}
-@media (max-width: 390px) {
-    .main-content {
-        width: 100%;
-        top: 280px;
-    }
-    .main-content .section-div {
-        height: auto;
-        margin: 0;
-        padding: 5px;
-    }
-    .container > .Contact.section-div {
-        display: inline-block;
-        margin: 10px;
-        width: 90vw;
-    }
-    .Contact h2 {
-        text-align: center;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
-    .Contact h3 {
-        text-align: center;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
-}
-@media (min-width: 391px) and (max-width: 1663px) {
-    .container > .Contact.section-div {
-        display: inline-block;
-        margin: 10px;
-        width: 94%;
-    }
-    .Contact h2 {
-        text-align: center;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
-    .Contact h3 {
-        text-align: center;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
+  display: inline-block;
+  position: relative;
+  margin-top: 5%;
 }

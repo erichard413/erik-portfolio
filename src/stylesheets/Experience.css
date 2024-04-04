@@ -1,113 +1,95 @@
-.Experience {
-    background-color: #454545;
-    border: 2px solid #006d75;
-    border-radius: 15px;
-    margin-top: 30px;
-    margin-left: 100px;
-    margin-right: 100px;
-    padding: 25px;
-    color: white;
+@media (max-width: 390px) {
+  .Experience h2 {
     text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .Experience h3 {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .Experience .Employer,
+  .employer-content {
+    width: auto;
+  }
+}
+@media (min-width: 391px) and (max-width: 1663px) {
+  .Work h2 {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .Work h3 {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
+.Experience {
+  border-radius: 15px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin: 10px;
+  padding: 25px;
 }
 .Experience h2 {
-    color: rgba(0,229,237,1);
-    padding: 10px;
-    font-size: 2.5rem;
-    text-align: left;
+  padding: 10px;
+  font-size: 2.5rem;
+  text-align: left;
 }
 .Experience a {
-    color: rgba(0,229,237,1);
-    text-decoration: none;
-    font-weight: 600;
+  text-decoration: none;
+  font-weight: 600;
 }
-.Experience a:visited, a:active {
-    color: rgba(0,229,237,1);
-    text-decoration: none;
-    font-weight: 600;
+.Experience a:visited,
+a:active {
+  text-decoration: none;
+  font-weight: 600;
 }
 .Experience p {
-    display: inline-block;
-    padding: 10px;
-    font-size: 1.5rem;
+  display: inline-block;
+  padding: 10px;
+  font-size: 1.5rem;
 }
 .Experience img:hover {
-    filter: none;
-    transition: filter .7s;
+  filter: none;
+  transition: filter 0.7s;
 }
-.Experience .at-sign {
-    color: white;
+.Experience.dark .at-sign {
+  color: white;
+}
+.Experience.light .at-sign {
+  color: black;
+}
+.Employer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
 .employer-content > ul > li {
-    list-style: none;
+  list-style: none;
+  text-align: left;
 }
 .employer-content {
-    display: inline-block;
-    text-align: center;
-    width: 900px;
+  display: block;
+  width: 90%;
+  text-align: center;
 }
 .employer-content > ul {
-    text-align: left;
+  margin: 0;
+  padding: 0;
 }
 .Experience .li-title {
-    font-weight: 600;
+  font-weight: 600;
 }
 .Experience li {
-    padding: 2px;
+  padding: 2px;
 }
 .employer-content > ul > li:first-of-type {
-    font-style: italic;
-}
-
-@media (max-width: 390px) {
-    .main-content {
-        width: 100%;
-        top: 280px;
-    }
-    .main-content .section-div {
-        height: auto;
-        margin: 0;
-        padding: 5px;
-    }
-    .container > .Experience.section-div {
-        display: inline-block;
-        margin: 10px;
-        width: 90vw;
-    }
-    .Experience h2 {
-        text-align: center;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
-    .Experience h3 {
-        text-align: center;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
-    .Experience .Employer, .employer-content {
-        width: 100%;
-    }
-  }
-  @media (min-width: 391px) and (max-width: 1663px) {
-    .container > .Experience.section-div {
-        display: inline-block;
-        margin: 10px;
-        width: 94%;
-    }
-    .Work h2 {
-        text-align: center;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
-    .Work h3 {
-        text-align: center;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
-    .Experience .Employer, .employer-content {
-        width: 100%;
-    }
+  font-style: italic;
 }

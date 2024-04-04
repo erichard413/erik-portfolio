@@ -1,15 +1,23 @@
-import { useState } from 'react'
-import Header from './components/Header'
-import About from './components/About'
-import Work from './components/Work'
-import Contact from './components/Contact'
-import Experience from './components/Experience'
-import Footer from './components/Footer'
-import Education from './components/Education'
-import './App.css'
+import { useState, useEffect } from "react";
+import Header from "./components/Header";
+import About from "./components/About";
+import Work from "./components/Work";
+import Contact from "./components/Contact";
+import Experience from "./components/Experience";
+import Footer from "./components/Footer";
+import Education from "./components/Education";
+import "./App.css";
+import { useTheme } from "./hooks/useThemeContext";
 
 function App() {
+  const { theme, setTheme } = useTheme();
 
+  useEffect(() => {
+    document.body.classList.add(theme);
+    return () => {
+      document.body.classList.remove(theme);
+    };
+  }, [theme]);
 
   function reveal() {
     const reveals = document.querySelectorAll(".reveal");
@@ -29,30 +37,31 @@ function App() {
 
   // To check the scroll position on page load
   reveal();
-
   return (
-    <>
-    <Header />
-    <div className="main-content">
-      <section className="container reveal active">
-        <About />
-      </section>
-      <section className="container reveal"> 
-        <Work />
-      </section>  
-      <section className="container reveal">
-        <Experience />
-      </section>  
-      <section className="container reveal">
-        <Education />
-      </section>  
-      <section className="container reveal">
-        <Contact />
-      </section>  
-    </div>
-    <Footer />
-    </>
-  )
+    theme && (
+      <>
+        <Header />
+        <div className="main-content">
+          <section className="container reveal active">
+            <About theme={theme} />
+          </section>
+          <section className="container reveal">
+            <Work theme={theme} />
+          </section>
+          <section className="container reveal">
+            <Experience theme={theme} />
+          </section>
+          <section className="container reveal">
+            <Education theme={theme} />
+          </section>
+          <section className="container reveal">
+            <Contact theme={theme} />
+          </section>
+        </div>
+        <Footer />
+      </>
+    )
+  );
 }
 
-export default App
+export default App;

@@ -1,89 +1,69 @@
-.Education {
-    background-color: #454545;
-    border: 2px solid #006d75;
-    border-radius: 15px;
-    margin-top: 30px;
-    margin-left: 100px;
-    margin-right: 100px;
-    padding: 25px;
-    color: white;
-    text-align: center;
-}
-.Education h2 {
-    color: rgba(0,229,237,1);
-    padding: 10px;
-    font-size: 2.5rem;
-    text-align: left;
-}
-.Education a {
-    color: rgba(0,229,237,1);
-    text-decoration: none;
-    font-weight: 600;
-}
-.Education a:visited, a:active {
-    color: rgba(0,229,237,1);
-    text-decoration: none;
-    font-weight: 600;
-}
-.Education p {
-    display: inline-block;
-    padding: 10px;
-    font-size: 1.5rem;
-}
-.Education img:hover {
-    filter: none;
-    transition: filter .7s;
-}
-.cert {
-    font-weight: 600;
-}
-.Education li {
-    padding: 5px;
-}
 @media (max-width: 390px) {
-    .main-content {
-        width: 100%;
-        top: 280px;
-    }
-    .main-content .section-div {
-        height: auto;
-        margin: 0;
-        padding: 5px;
-    }
-    .container > .Education.section-div {
-        display: inline-block;
-        margin: 10px;
-        width: 90vw;
-    }
-    .Education h2 {
-        text-align: center;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
-    .Education h3 {
-        text-align: center;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
+  .Education h2 {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .Education h3 {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
 }
 @media (min-width: 391px) and (max-width: 1663px) {
-    .container > .Education.section-div {
-        display: inline-block;
-        margin: 10px;
-        width: 94%;
-    }
-    .Education h2 {
-        text-align: center;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
-    .Education h3 {
-        text-align: center;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
+  .Education h2 {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .Education h3 {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
+.Education {
+  /* background-color: #454545; */
+  border: 2px solid #006d75;
+  border-radius: 15px;
+
+  padding: 25px;
+  /* color: white; */
+  text-align: center;
+}
+.Education h2 {
+  /* color: rgba(0,229,237,1); */
+  padding: 10px;
+  font-size: 2.5rem;
+  text-align: left;
+}
+.Education a {
+  /* color: rgba(0,229,237,1); */
+  text-decoration: none;
+  font-weight: 600;
+}
+.Education a:visited,
+a:active {
+  /* color: rgba(0,229,237,1); */
+  text-decoration: none;
+  font-weight: 600;
+}
+.Education p {
+  display: inline-block;
+  padding: 10px;
+  font-size: 1.5rem;
+}
+.Education img:hover {
+  filter: none;
+  transition: filter 0.7s;
+}
+.cert {
+  font-weight: 600;
+}
+.Education li {
+  padding: 5px;
 }
