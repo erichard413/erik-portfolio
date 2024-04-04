@@ -104,11 +104,11 @@ const About = () => {
         <div className="tech-stack-icons">
           <StackIcon name="reactjs" />
           <StackIcon name="vitejs" />
+          <StackIcon name="postgresql" />
+          <StackIcon name="nodejs" />
           <StackIcon name="js" />
           <StackIcon name="typescript" />
-          <StackIcon name="postgresql" />
           <StackIcon name="python" />
-          <StackIcon name="nodejs" />
           <StackIcon name="html5" />
           <StackIcon name="css3" />
         </div>
