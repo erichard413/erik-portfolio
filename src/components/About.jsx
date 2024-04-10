@@ -2,66 +2,23 @@ import React, { useState, useRef } from "react";
 import headshot from "../assets/headshot.jpg";
 import Hobby from "./Hobby";
 import "../stylesheets/About.css";
-import erikSkate from "../assets/erik-skate.png";
-import erikDG from "../assets/erik-discgolf.png";
-import erikHockey from "../assets/erik-hockey.png";
-import Carousel from "react-elastic-carousel";
 import { useTheme } from "../hooks/useThemeContext.jsx";
 import StackIcon from "tech-stack-icons";
 
 const About = () => {
   const { theme } = useTheme();
-  const [items, setItems] = useState([1, 2, 3, 4, 5, 6, 7, 8]);
-  const isHovered = useRef(false);
+  // const [items, setItems] = useState([1, 2, 3, 4, 5, 6, 7, 8]);
+  // const isHovered = useRef(false);
 
-  const addItem = () => {
-    const nextItem = Math.max(1, items.length + 1);
-    setItems([...items, nextItem]);
-  };
+  // const addItem = () => {
+  //   const nextItem = Math.max(1, items.length + 1);
+  //   setItems([...items, nextItem]);
+  // };
 
-  const removeItem = () => {
-    const endRange = Math.max(0, items.length - 1);
-    setItems(items.slice(0, endRange));
-  };
-
-  const hobbies = [
-    {
-      img: erikDG,
-      name: "Disc Golf",
-      caption: "I throw frisbees at metal chains for fun",
-      lis: [
-        '3 "Hole-in-ones"',
-        "Under-performs in every tournament",
-        <a href="https://www.pdga.com/player/196133" target="_blank">
-          PDGA#: 196133
-        </a>,
-      ],
-    },
-    {
-      img: erikSkate,
-      name: "Skateboarding",
-      caption: "Skateboarder of 20+ years, and 0 broken bones!",
-      lis: [
-        "Product wear tester for Converse",
-        "Master of the inward heelflip",
-        <a href="https://youtu.be/-82xrhWx6_4" target="_blank">
-          Video Reel
-        </a>,
-      ],
-    },
-    {
-      img: erikHockey,
-      name: "Hockey",
-      caption: "Huge Boston Bruins fan, decent C-tier beer league player",
-      lis: [
-        "Not a total bender",
-        "Wrist shot could use work",
-        "Manages fantasy hockey league, but only won once",
-        "Enjoys watching the Boston Bruins",
-      ],
-    },
-  ];
-  console.log("re-render");
+  // const removeItem = () => {
+  //   const endRange = Math.max(0, items.length - 1);
+  //   setItems(items.slice(0, endRange));
+  // };
   return (
     <div className={`About ${theme} section-div`}>
       <h2>About Me</h2>

@@ -11,8 +11,6 @@
 }
 .Hobby {
   display: inline-block;
-  /* border: 2px solid #006d75; */
-  /* border-radius: 25px; */
   width: 100%;
   margin-left: 0px;
   margin-right: 0px;
@@ -29,6 +27,9 @@
 .Hobby ul {
   display: block;
   text-align: left;
-  margin: 0px;
+  margin: auto;
   padding-left: 50px;
+}
+.Hobby-list {
+  display: flex;
 }

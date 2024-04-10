@@ -30,9 +30,6 @@
     padding: 20px;
     font-size: 1.3rem;
   }
-  .About .hobbies-container {
-    width: 100% !important;
-  }
   .About .rec.rec-slider-container {
     width: 100%;
   }
@@ -43,12 +40,6 @@
   .About .rec.rec-slider-container li {
     padding-left: 20px;
     margin: 0;
-  }
-  .About .Hobby-info {
-    padding: 0;
-  }
-  .About .Hobby {
-    border: 0px;
   }
 }
 

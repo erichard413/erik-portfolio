@@ -1,0 +1,26 @@
+.hobbies-container {
+  width: 100%;
+}
+.Hobbies .rec.rec-slider-container {
+  width: 100%;
+}
+.Hobbies .rec.rec-slider-container img {
+  size: 50%;
+  margin: auto;
+}
+.Hobby-info {
+  width: 100%;
+  padding: 0;
+}
+
+.Hobbies {
+  border-radius: 15px;
+  padding: 25px;
+}
+.Hobbies p {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.Hobbies .italic {
+  font-style: italic;
+}

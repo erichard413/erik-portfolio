@@ -6,6 +6,7 @@ import Contact from "./components/Contact";
 import Experience from "./components/Experience";
 import Footer from "./components/Footer";
 import Education from "./components/Education";
+import Hobbies from "./components/Hobbies";
 import "./App.css";
 import { useTheme } from "./hooks/useThemeContext";
 
@@ -49,10 +50,13 @@ function App() {
             <Work theme={theme} />
           </section>
           <section className="container reveal">
+            <Education theme={theme} />
+          </section>
+          <section className="container reveal">
             <Experience theme={theme} />
           </section>
           <section className="container reveal">
-            <Education theme={theme} />
+            <Hobbies theme={theme} />
           </section>
           <section className="container reveal">
             <Contact theme={theme} />
