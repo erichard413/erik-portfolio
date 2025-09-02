@@ -1,6 +1,6 @@
 import React from "react";
 import "../stylesheets/Contact.css";
-import resume from "../assets/Erik_Richard_Resume.pdf";
+import resume from "../assets/Erik-Richard-Resume-2025.pdf";
 
 const Contact = ({ theme }) => {
   return (
